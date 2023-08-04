@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    --button-color: darkslateblue;
+    --button-bg-color: rgb(80, 200, 200);
+}
+
+.link-button {
+    background-color: var(--button-bg-color);
+    border-radius: 5px;
+    color: var(--button-color);
+    cursor: pointer;
+    font-family: 'Century Gothic', sans-serif;
+    padding: 1em;
+}
+.link-button, a {
+    text-decoration: none !important;
+}
+.link-button, a:hover {
+    color: var(--button-color);
+    text-decoration: none !important;
+}
+.link-button, a:focus {
+    outline: none;
+}

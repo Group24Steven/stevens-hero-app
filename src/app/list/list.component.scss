@@ -1,0 +1,9 @@
+input {
+    border: 3px solid rgb(80, 200, 200);
+    color: rgb(30, 150, 150);
+    padding: 1em;
+    border-radius: 7px;
+}
+input:focus {
+    outline: none;
+}
